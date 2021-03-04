@@ -2,6 +2,8 @@
 
 Simple ruby script to check various stores for PS5 stock availablity. Script relies on [pushover](http://pushover.net/) for stock notification
 
+[Docker Hub - check_ps5_stock](https://hub.docker.com/repository/docker/victoriggy/check_ps5_stock)
+
 ### How to build
 
 1. Checkout this git repository
