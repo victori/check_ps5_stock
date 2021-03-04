@@ -11,6 +11,7 @@ STORES['https://direct.playstation.com/en-us/consoles/console/playstation5-digit
 
 loop do
   STORES.each do |url,txt|
+    puts "Checking: #{url}"
     resp = open(url, 'User-Agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36 OPR/38.0.2220.41').read
     unless resp.downcase =~ /#{txt.downcase}/i
       puts "#{url} in stock at #{Time.now}!"
@@ -19,6 +20,7 @@ loop do
       message.push
     end
   end
+  puts "Sleeping for #{ARGV[2]}...."
   sleep ARGV[2].to_i
 end
 
