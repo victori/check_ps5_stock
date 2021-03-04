@@ -12,6 +12,12 @@ Simple ruby script to check various stores for PS5 stock availablity. Script rel
 
    `make`
 
+### Install from docker hub
+
+   If you don't want to bother building you can pull from docker hub directly.
+
+   `docker pull victoriggy/check_ps5_stock:latest`
+
 ### How to run
 
 `docker run -e token=myToken -e user_key=myKey -e sleep_time=1800 --rm victoriggy/check_ps5_stock`

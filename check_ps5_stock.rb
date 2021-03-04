@@ -19,6 +19,6 @@ loop do
       message.push
     end
   end
-  sleep ARGV[2]
+  sleep ARGV[2].to_i
 end
 
