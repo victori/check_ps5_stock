@@ -14,4 +14,4 @@ Simple ruby script to check various stores for PS5 stock availablity. Script rel
 
 ### How to run
 
-`docker run -e token=myToken -e user_key=myKey -e sleep_time=1800 --rm victori/check_ps5_stock`
+`docker run -e token=myToken -e user_key=myKey -e sleep_time=1800 --rm victoriggy/check_ps5_stock`
