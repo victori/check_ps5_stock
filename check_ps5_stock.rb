@@ -9,6 +9,9 @@ STORES['https://www.walmart.com/ip/PlayStation5-Console/363472942'] = 'out of st
 STORES['https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/11108140.html'] = 'NOT AVAILABLE'
 STORES['https://direct.playstation.com/en-us/consoles/console/playstation5-digital-edition-console.3005817'] = 'Out of Stock'
 
+message = Pushover::Message.new(token: ARGV[0], user: ARGV[1], message: "Stock checker has started for the PS5")
+message.push
+
 loop do
   STORES.each do |url,txt|
     puts "Checking: #{url}"
